@@ -1,0 +1,17 @@
+
+h1 {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 8em;
+    font-style: bold;
+    color: transparent;    
+    line-height: .83;
+    text-align: left;
+    margin-top:0;
+    background-image:url(https://media.giphy.com/media/BYQkYecpBaa4/giphy.gif);
+    background-position:left;
+    -webkit-background-clip:text;
+   
+}
+
+
+
