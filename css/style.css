@@ -1,30 +1,85 @@
+@font-face {
+    font-family:'Lexend Zetta';
+    src: url(../fonts/Lexend_Zetta/LexendZetta-Regular.ttf);
+}
+@font-face {
+    font-family:'Michroma';
+    src: url(../fonts/Michroma/Michroma-Regular.ttf);
+}
+@font-face {
+    font-family:'Roboto Condensed';
+    src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+/*This will be consistent across the site*/
 header {
     background-color:rgba(241, 241, 241, 0.849);
     /*height: 23em; This worked for the correct height*/
-   /* height:368px;*/
     height:auto;
-   
     margin-top: 0;
     padding-top:0;
-
 
 }
 
 body {
     background-image: url(../img/tirebackground.jpg);
     background-color: #333333;
+    margin:0, auto;
 }
+nav {
+    background-color: orange;
+    height:2.5em;
+    width: 100%;
+    margin: 20px 0;
+    overflow:hidden;
+}
+nav ul {
+    width:100%; /*from above*/
+    list-style:none;
+    margin:0;
+    padding:0;
+    
+}
+nav ul li{
+    width:25%;
+    float:left;
+        
+}
+nav ul li a {
+    display:block;
+    width: 100%;
+}
+/*#mainParagraph {
+    font-family: 'Lexend Zetta', sans-serif;
+    color:white;
+    font-size:22px;
+    
+    float:left;
 
-article {
+    /*top:-150px;
+    left:30px;*/
+   /* text-align:justify;
+    width:33.3%;
+    background-color: rgba(241, 241, 241, 0.20);
+    
+}
+/*#mainParagraph {
     font-family: 'Lexend Zetta', sans-serif;
     color:white;
     font-size:1.5em;
-    text-align:center;
-    /*stuggling to get the formatting*/
-    max-width:1000px;
-    margin: 50 200;
+    background-color: rgba(241, 241, 241, 0.20);
+    padding:0 150 0 50;
+    outline:2px solid orange;
+    position:relative;
+    float:left;
 
-}
+
+    /*float:right;
+    /*stuggling to get the formatting*/
+   /*text-align:justify;
+    margin: 50 200;
+    outline:2px solid orange;
+
+}*/
 
 hr {
     width: 100%;
@@ -34,6 +89,14 @@ hr {
     background-color:red;
     display: block;
     margin-top:-75px;    
+}
+
+/*#mainTruck {
+    float:left;
+    
+    top:400px;
+    left:25px;
+    border-radius:20px;
 }
 /*This is for the header shown on every page. Bold, Strong Font types */
 #logoName {
@@ -94,7 +157,7 @@ hr {
 }*/
 
 form {
-    font-family: 'Lexend Zetta', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     width:33.3%;
     text-align:center;
     background-color:red;
@@ -102,12 +165,13 @@ form {
     outline: 3px solid orange;
 }
 label {
-    font-family: 'Lexend Zetta'sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color:black;
     outline: 3px solid white;
 }
 
 input {
+    font-family: 'Roboto Condensed', sans-serif;
     background-color:black;
     outline:2px solid black;
     color:white;
@@ -146,6 +210,4 @@ a {
     position: relative;
     float:right;
 }
-/*mainTruck {
-    position: */
 
