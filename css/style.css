@@ -25,9 +25,10 @@ body {
     background-color: #333333;
     margin:0, auto;
 }
+
+/*beginning of NAV bar styling*/
 nav {
-    background-color: orange;
-    height:2.5em;
+    height:2.6em;
     width: 100%;
     margin: 20px 0;
     overflow:hidden;
@@ -36,28 +37,39 @@ nav ul {
     width:100%; /*from above*/
     list-style:none;
     margin:0;
-    padding:0;
+    padding:0px;    
     
 }
 nav ul li{
-    width:25%;
+    width:24.4%;
     float:left;
+    padding:0px 5px;
+    
         
 }
 nav ul li a {
     display:block;
     width: 100%;
+    /*background-image: linear-gradient(gray, black);*/
+    background-image: linear-gradient(rgb(253, 165, 0), rgba(255, 0, 0, 0.856));
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+    font-size: 2em;
+    text-decoration:none;
+    border-radius:10px;
+    border: 2px solid red;
 }
-/*#mainParagraph {
+/*end of nav bar styling */
+#mainParagraph {
     font-family: 'Lexend Zetta', sans-serif;
     color:white;
     font-size:22px;
     
     float:left;
 
-    /*top:-150px;
-    left:30px;*/
-   /* text-align:justify;
+    top:-150px;
+    left:30px;
+    text-align:justify;
     width:33.3%;
     background-color: rgba(241, 241, 241, 0.20);
     
@@ -91,7 +103,7 @@ hr {
     margin-top:-75px;    
 }
 
-/*#mainTruck {
+#mainTruck {
     float:left;
     
     top:400px;
@@ -194,7 +206,7 @@ a {
     text-align:center;
     border:2px solid black;
     background:gray;
-    outline: 3px solid purple;
+    
 
 }
 .footerStyle{
