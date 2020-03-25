@@ -19,11 +19,69 @@ header {
     padding-top:0;
 
 }
-
+/*This is for the header shown on every page. Bold, Strong Font types */
+#logoName {
+    font-family: 'Michroma', sans-serif;
+    letter-spacing:20px;
+    font-size:128px;
+    margin-top: 0;
+    padding-top:0;
+    color: transparent;    
+    line-height: .83;
+    height:2.8em;
+    /*animated background for header text*/
+    background-image:url(https://media.giphy.com/media/AYO7okX03Jbq/giphy.gif);
+    background-size: 20em;
+    background-position:center;
+    background-clip:text;
+    -moz-background-clip:text;
+    -webkit-background-clip:text;
+    width:35%;
+}
+/*Original code using em but can't get it to work with the header */
+/*#logoName {
+    font-family: 'Michroma', sans-serif;
+    font-size: 8em;
+    color: transparent;    
+    line-height: .83;
+    height:2.8em;
+    text-align: left; 
+    vertical-align:center;
+    position:relative;
+    width:33.3%;      
+    /*background-image:url(https://media.giphy.com/media/AYO7okX03Jbq/giphy.gif);
+    background-size: 20em;
+    background-position:center;
+    -webkit-background-clip:text;
+}
+*/
+/* bottom right header placement*/
+#logoSub {
+    font-family: 'Michroma', sans-serif;
+    font-size: 28px;
+    padding-right:5px;
+    width:40%;
+    position:relative;
+    float:right;
+    top:-155px;
+    text-align:right;
+}
+    
+    /*Original code with %s*/
+    /*position: relative;
+    text-align:right;
+    /*struggling to get formatting*/
+    /*float:right;
+    width:40%;
+    top:-40%;
+    position: relative;
+    float:right;
+    outline: 3px solid black;
+}*/
 body {
     background-image: url(../img/tirebackground.jpg);
     background-color: #333333;
-    margin:0, auto;
+    
 }
 
 /*beginning of NAV bar styling*/
@@ -50,14 +108,14 @@ nav ul li{
 nav ul li a {
     display:block;
     width: 100%;
-    /*background-image: linear-gradient(gray, black);*/
     background-image: linear-gradient(rgb(253, 165, 0), rgba(255, 0, 0, 0.856));
     font-family: 'Roboto Condensed', sans-serif;
     color:white;
     font-size: 2em;
     text-decoration:none;
     border-radius:10px;
-    border: 2px solid red;
+    border: 2px solid black;
+    text-shadow:2px 2px 4px #000000;
 }
 /*end of nav bar styling */
 #mainParagraph {
@@ -110,90 +168,58 @@ hr {
     left:25px;
     border-radius:20px;
 }
-/*This is for the header shown on every page. Bold, Strong Font types */
-#logoName {
-    font-family: 'Michroma', sans-serif;
-    letter-spacing:20px;
-    font-size:128px;
-    margin-top: 0;
-    padding-top:0;
-    color: transparent;    
-    line-height: .83;
-    height:2.8em;
-    /*animated background for header text*/
-    background-image:url(https://media.giphy.com/media/AYO7okX03Jbq/giphy.gif);
-    background-size: 20em;
-    background-position:center;
-    -webkit-background-clip:text;
-    width:35%;
-}
-/*Original code using em but can't get it to work with the header */
-/*#logoName {
-    font-family: 'Michroma', sans-serif;
-    font-size: 8em;
-    color: transparent;    
-    line-height: .83;
-    height:2.8em;
-    text-align: left; 
-    vertical-align:center;
-    position:relative;
-    width:33.3%;      
-    /*background-image:url(https://media.giphy.com/media/AYO7okX03Jbq/giphy.gif);
-    background-size: 20em;
-    background-position:center;
-    -webkit-background-clip:text;
-}
-*/
-/* bottom right header placement*/
-#logoSub {
-    font-family: 'Michroma', sans-serif;
-    font-size: 28px;
-    padding-right:5px;
-    width:40%;
-    position:relative;
-    float:right;
-    top:-155px;
-    text-align:right;
-}
+footer {
     
-    /*Original code with %s*/
-    /*position: relative;
-    text-align:right;
-    /*struggling to get formatting*/
-    /*float:right;
-    width:40%;
-    top:-40%;
-    position: relative;
-    float:right;
-    outline: 3px solid black;
-}*/
+}
+/*Quick contact form for the footer of the page and general submissions*/
 
 form {
     font-family: 'Roboto Condensed', sans-serif;
     width:33.3%;
+    background-image: url(../img/brushed.jpg);
+    height:300px;
+    background-size:500px;
     text-align:center;
-    background-color:red;
+    
     display:inline-block;
-    outline: 3px solid orange;
 }
 label {
     font-family: 'Roboto Condensed', sans-serif;
     color:black;
-    outline: 3px solid white;
+    font-size:1.2em;
+    font-weight:bold;
+    position:relative;
+    right:150px;
+    top:8px;
+    
+    
+
+    
 }
 
 input {
-    font-family: 'Roboto Condensed', sans-serif;
     background-color:black;
     outline:2px solid black;
     color:white;
-    outline: 3px solid red;
+    height:1.8em;
+    width:15em;
+    outline: 3px solid pink;
+    position:relative;
+    right:150px;
+    padding:10px;
+    margin:10px;
 
 }
-
+textarea{
+    position:relative;
+    left:130px;
+    top:-286px;
+    background-color:rgb(37, 37, 37);
+    border-radius:10px;
+    border:2.5px solid silver;
+}
 address{
     width:33.3%;
-    position:relative;
     float: left;
     color:white;
     font-family: calibri;
@@ -209,11 +235,14 @@ a {
     
 
 }
+
 .footerStyle{
     font-family: calibri;
     color:white;
     text-align:center;
     outline: 3px solid pink;
+    width:33.3%;
+    float:right;
 
 }
 .facebook{
@@ -223,3 +252,15 @@ a {
     float:right;
 }
 
+/*#firstName {
+    color:yellow;
+    background-color:yellow;
+}*/
+
+#submitButton {
+   position:relative;
+   float:right;
+   top:-250px;
+   right:75px;
+   height:auto;
+}
