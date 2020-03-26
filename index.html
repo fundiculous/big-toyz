@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang= 'en'>
+<html lang="en">
     <head>
         <title>Big Toyz Racing</title>
-        <link rel= "stylesheet" href="css/style.css" />
-         
-      
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <style>
+              .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+        </style>
+        <link rel= "stylesheet" href="css/style.css"/>
     </head> 
-    <body>
-        
-        <header>
-            <h1 id= 'logoName'> Big<br>Toyz<br>Racing</h1>
-            <h2 id = 'logoSub'>
-                Your Motorsports Marketing Finish Line</h2>
-        </header>
+<body>
+    <header>
+        <h1 id= 'logoName'> Big<br>Toyz<br>Racing</h1>
+        <h2 id = 'logoSub'>
+            Your Motorsports Marketing Finish Line</h2>
+    </header>
     <hr>    
         
 <!---nav bar--->
@@ -32,19 +41,56 @@
             </li>
         </ul>
     </nav>
-      
-    <img id = 'mainTruck' src='./img/20140504_175322.jpg' alt='Hustler Monster Truck' width="900" />
-    
+
+    <div id="mainCarousel" class="carousel slide"data-ride="carousel" data-interval="4000">
+    <!--Indicators-->
+        <ul class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+            <li data-target="#mainCarousel" data-slide-to="3"></li>
+            <li data-target="#mainCarousel" data-slide-to="4"></li>
+          </ul>
+
+        <!--The Slideshow-->  
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/20140504_175322.jpg" alt="Monster Truck">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/seats.jpg" alt="Monster Truck Interior">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/heli.jpg" alt="Monster Truck with Helicopter">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/front-suspension.JPG" alt="Front Suspension">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./img/hustler-fury.jpg" alt="Monster Truck Artistic">
+            </div>
+
+            <!--Left and Right Controls-->
+            <a class="carousel-control-prev" href="#mainCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#mainCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            
+        </div>
+    </div>
+
+    <!--<img id = 'mainTruck' src='./img/20140504_175322.jpg' alt='Hustler Monster Truck' width="900" />-->
+
         <p id='mainParagraph'>
             At Big Toyz Racing, we do what we love and work through our passion. We strive to push the envelope to create growth, generate creativity and unique platform for premier marketing, design, build and facilitate custom vehicles, professionally consult, and of course have fun while we are doing it. 
 ​         <br>
          <br>
             Motorsports and vehicles are our core. So welcome in. Whether you are here seeking information on how to innovatively promote your business with an interactive marketing strategy or simply read about building the World's Longest Monster Truck, we can help you out.
         <p>
-        <aside>
-
-        </aside>
-        <!--<footer>
+        
+        <footer>
             <address>
                 <h3>Come Visit Us At:</h3>
                 20606 N US HWY 93<BR>
@@ -67,11 +113,11 @@
 
                 <input type="text" id="emailAddress" name="emailAddress" required> <br>
 
-                <label for="comments">Please provide any<br> additional comments:</label> <br>
+                <label for="comments" id="comments">Please provide any<br> additional comments:</label> <br>
 
-                <textarea rows="5" cols="30" placeholder="Type comments here"> </textarea>  <br>
+                <textarea rows="8" cols="35" placeholder="Type comments here"> </textarea>  <br>
 
-                <input type="submit" value="Click here">
+                <input type="submit" id="submitButton" value="Click here">
             </form>
             <div class="footerStyle">
                 Follow us on Social Media: <br><br>
@@ -81,5 +127,7 @@
             </div>
             </form>
         </footer>
+        <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https:code//code.jquery.com/jquery-2.1.3.min.js"></script>
     </body>
 </html>
