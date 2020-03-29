@@ -10,22 +10,41 @@
     font-family:'Roboto Condensed';
     src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
+
+html{
+        font-size: 16px;
+    }
+   
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 10px;    
+    }
+}
+/*
+@media only screen and (max-width: 8480px) {
+    body {
+        font-size: 8px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
 /*This will be consistent across the site*/
 header {
-    background-color:rgba(241, 241, 241, 0.849);
-    /*height: 23em; This worked for the correct height*/
-    height:auto;
-    margin-top: 0;
-    padding-top:0;
+    background-color:rgba(241, 241, 241, 0.75);
+    height:auto; 
 
 }
-/*This is for the header shown on every page. Bold, Strong Font types */
+/*This is for the header shown on every page.*/
 #logoName {
     font-family: 'Michroma', sans-serif;
     letter-spacing:20px;
-    font-size:128px;
-    margin-top: 0;
-    padding-top:0;
+    font-size:5.2em;
     color: transparent;    
     line-height: .83;
     height:2.8em;
@@ -37,59 +56,45 @@ header {
     -moz-background-clip:text;
     -webkit-background-clip:text;
     width:35%;
+    
 }
-/*Original code using em but can't get it to work with the header */
-/*#logoName {
-    font-family: 'Michroma', sans-serif;
-    font-size: 8em;
-    color: transparent;    
-    line-height: .83;
-    height:2.8em;
-    text-align: left; 
-    vertical-align:center;
-    position:relative;
-    width:33.3%;      
-    /*background-image:url(https://media.giphy.com/media/AYO7okX03Jbq/giphy.gif);
-    background-size: 20em;
-    background-position:center;
-    -webkit-background-clip:text;
-}
-*/
-/* bottom right header placement*/
+
 #logoSub {
     font-family: 'Michroma', sans-serif;
-    font-size: 28px;
-    padding-right:5px;
+    font-size: 1.8em;
+    padding-right:10px;
     width:40%;
     position:relative;
     float:right;
-    top:-155px;
+    top:-1.7em;
     text-align:right;
-}
     
-    /*Original code with %s*/
-    /*position: relative;
-    text-align:right;
-    /*struggling to get formatting*/
-    /*float:right;
-    width:40%;
-    top:-40%;
-    position: relative;
-    float:right;
-    outline: 3px solid black;
-}*/
+}
 body {
     background-image: url(../img/tirebackground.jpg);
     background-color: #333333;
     
 }
+/*red line above nav*/
+hr {
+    width: 100%;
+    border-color:black;
+    border-style:solid;
+    height: 2px;
+    background-color:red;
+    display: block;
+    margin-top:10px;    
+}
 
 /*beginning of NAV bar styling*/
 nav {
-    height:2.6em;
+    height:3.2em;
     width: 100%;
     margin: 20px 0;
     overflow:hidden;
+    position:relative;
+    top:-10px;
+    
 }
 nav ul {
     width:100%; /*from above*/
@@ -112,76 +117,57 @@ nav ul li a {
     font-family: 'Roboto Condensed', sans-serif;
     color:white;
     font-size: 2em;
+    text-align:center;
     text-decoration:none;
     border-radius:10px;
     border: 2px solid black;
     text-shadow:2px 2px 4px #000000;
 }
 /*end of nav bar styling */
+.carousel-item {
+    width:1300px;
+    height:800px;
+    margin:100px 305px;
+    border: 20px solid black;
+    outline:5px groove red;
+}
+
 #mainParagraph {
     font-family: 'Lexend Zetta', sans-serif;
     color:white;
-    font-size:22px;
-    
-    float:left;
-
-    top:-150px;
-    left:30px;
-    text-align:justify;
-    width:33.3%;
-    background-color: rgba(241, 241, 241, 0.20);
-    
-}
-/*#mainParagraph {
-    font-family: 'Lexend Zetta', sans-serif;
-    color:white;
     font-size:1.5em;
-    background-color: rgba(241, 241, 241, 0.20);
-    padding:0 150 0 50;
-    outline:2px solid orange;
-    position:relative;
-    float:left;
-
-
-    /*float:right;
-    /*stuggling to get the formatting*/
-   /*text-align:justify;
-    margin: 50 200;
-    outline:2px solid orange;
-
-}*/
-
-hr {
-    width: 100%;
-    border-color:black;
-    border-style:solid;
-    height: 2px;
-    background-color:red;
-    display: block;
-    margin-top:-75px;    
-}
-
-#mainTruck {
-    float:left;
+    padding:50px;
+    margin: 100px;
+    text-align:justify;
+    width:auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    outline:3px solid orange;
     
-    top:400px;
-    left:25px;
-    border-radius:20px;
+    
 }
-footer {
+
+
+/*footer {
     
 }
 /*Quick contact form for the footer of the page and general submissions*/
-
+.firstLine{
+    text-align:center;
+    color:white;
+}
+.secondLine {
+    text-align:center;
+    color:gray;
+}
 form {
     font-family: 'Roboto Condensed', sans-serif;
     width:33.3%;
     background-image: url(../img/brushed.jpg);
-    height:300px;
-    background-size:500px;
-    text-align:center;
-    
+    height:18.75em;
+    background-size:31.25em;
+    /*text-align:center;*/
     display:inline-block;
+    
 }
 label {
     font-family: 'Roboto Condensed', sans-serif;
@@ -189,34 +175,36 @@ label {
     font-size:1.2em;
     font-weight:bold;
     position:relative;
-    right:150px;
-    top:8px;
-    
-    
-
-    
+    /*right:200px;
+    top:8px;*/    
 }
-
+#comments {
+    left:330px;
+    top:-250px;
+}
 input {
-    background-color:black;
-    outline:2px solid black;
+    background-color:rgb(37, 37, 37);
+    /*outline:2px solid black;*/
     color:white;
     height:1.8em;
     width:15em;
-    outline: 3px solid pink;
+    border:2.5px solid red;
     position:relative;
-    right:150px;
+    left:50px;
     padding:10px;
     margin:10px;
+    border-radius:10px;
 
 }
 textarea{
     position:relative;
-    left:130px;
-    top:-286px;
+    /*top:-250px;
+    left:325px;*/
+    
+
     background-color:rgb(37, 37, 37);
     border-radius:10px;
-    border:2.5px solid silver;
+    border:2.5px solid red;
 }
 address{
     width:33.3%;
@@ -224,17 +212,22 @@ address{
     color:white;
     font-family: calibri;
     font-style:normal;
-    outline: 3px solid green;
+    text-align:center;
+    background-color: black;
+    height:18.75em;
+    padding:2em;
 }
-
-a {
+address h4 {
+    margin:25px;
+}
+/*a {
     color:white;
     text-align:center;
     border:2px solid black;
     background:gray;
     
 
-}
+}*/
 
 .footerStyle{
     font-family: calibri;
@@ -259,8 +252,8 @@ a {
 
 #submitButton {
    position:relative;
-   float:right;
-   top:-250px;
-   right:75px;
+   top:-240px;
+   left:350px;
    height:auto;
 }
+
