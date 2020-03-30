@@ -10,7 +10,9 @@
     font-family:'Roboto Condensed';
     src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
-
+@font-face {
+    font-family:'WorkSans-Black'; src: url(../fonts/Work_Sans/static/WorkSans-Black.ttf);
+}
 html{
         font-size: 16px;
     }
@@ -152,17 +154,21 @@ nav ul li a {
 }
 /*Quick contact form for the footer of the page and general submissions*/
 .firstLine{
+    font-weight:900;
+    font-size:2em;
     text-align:center;
     color:white;
 }
 .secondLine {
+    font-weight:900;
+    font-size:2em;
     text-align:center;
     color:gray;
 }
 form {
     font-family: 'Roboto Condensed', sans-serif;
     width:33.3%;
-    background-image: url(../img/brushed.jpg);
+    background-color:rgb(102, 102, 102);
     height:18.75em;
     background-size:31.25em;
     /*text-align:center;*/
@@ -210,8 +216,9 @@ address{
     width:33.3%;
     float: left;
     color:white;
-    font-family: calibri;
+    font-family:'Work Sans', sans-serif;
     font-style:normal;
+    font-weight: 500px;
     text-align:center;
     background-color: black;
     height:18.75em;
@@ -220,14 +227,15 @@ address{
 address h4 {
     margin:25px;
 }
-/*a {
-    color:white;
+
+
+a {
+    color:red;
     text-align:center;
-    border:2px solid black;
-    background:gray;
+    
     
 
-}*/
+}
 
 .footerStyle{
     font-family: calibri;
