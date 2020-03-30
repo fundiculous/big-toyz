@@ -175,15 +175,7 @@ form {
     display:inline-block;
     
 }
-label {
-    font-family: 'Roboto Condensed', sans-serif;
-    color:black;
-    font-size:1.2em;
-    font-weight:bold;
-    position:relative;
-    /*right:200px;
-    top:8px;*/    
-}
+
 #comments {
     left:330px;
     top:-250px;
