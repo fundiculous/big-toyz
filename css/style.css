@@ -149,66 +149,85 @@ nav ul li a {
 }
 
 
-/*footer {
-    
+footer {
+    font-family:'Work Sans', sans-serif;
 }
 /*Quick contact form for the footer of the page and general submissions*/
-.firstLine{
+.footerFirst{
     font-weight:900;
     font-size:2em;
     text-align:center;
     color:white;
+    letter-spacing: .4em;
 }
-.secondLine {
+.footerSecond {
     font-weight:900;
     font-size:2em;
     text-align:center;
     color:gray;
+    letter-spacing: .4em;
 }
+.footerFirstCenter {
+    margin-top:25px;
+    font-weight:900;
+    font-size:2em;
+    text-align:center;
+    color:white;
+    letter-spacing: .4em;
+}
+.footerSecondCenter {
+    font-weight:900;
+    font-size:2em;
+    text-align:center;
+    color:gray;
+    letter-spacing: .4em;
+    
+}
+
 form {
-    font-family: 'Roboto Condensed', sans-serif;
     width:33.3%;
     background-color:rgb(102, 102, 102);
     height:18.75em;
-    background-size:31.25em;
-    /*text-align:center;*/
-    display:inline-block;
-    
+    float:left;
+           
 }
 
-#comments {
-    left:330px;
-    top:-250px;
-}
 input {
+    font-family: 'Roboto Condensed', sans-serif;
     background-color:rgb(37, 37, 37);
-    /*outline:2px solid black;*/
     color:white;
-    height:1.8em;
-    width:15em;
-    border:2.5px solid red;
-    position:relative;
-    left:50px;
-    padding:10px;
-    margin:10px;
-    border-radius:10px;
-
-}
-textarea{
-    position:relative;
-    /*top:-250px;
-    left:325px;*/
+    padding:7px;
+    border:1px solid black;
+    margin-left:80px;
+    width:40%;
     
-
-    background-color:rgb(37, 37, 37);
-    border-radius:10px;
-    border:2.5px solid red;
 }
+
+textarea{
+    width: 40%;
+    height:40%;
+    float:right;
+    margin-right:80px;
+    background-color:rgb(37, 37, 37);
+    padding:7px;
+    border:1px solid black;
+    position: relative;
+    bottom:120px;
+    
+}
+
+#submitButton {
+   height:auto;
+   width:25%;
+   position:relative;
+   left:150px;
+   bottom:10px;
+   
+ }
 address{
     width:33.3%;
     float: left;
     color:white;
-    font-family:'Work Sans', sans-serif;
     font-style:normal;
     font-weight: 500px;
     text-align:center;
@@ -216,17 +235,15 @@ address{
     height:18.75em;
     padding:2em;
 }
-address h4 {
+address h3 {
     margin:25px;
+    font-size: 1.2em;
 }
 
 
 a {
     color:red;
     text-align:center;
-    
-    
-
 }
 
 .footerStyle{
@@ -245,15 +262,7 @@ a {
     float:right;
 }
 
-/*#firstName {
-    color:yellow;
-    background-color:yellow;
-}*/
 
-#submitButton {
-   position:relative;
-   top:-240px;
-   left:350px;
-   height:auto;
-}
+
+
 
