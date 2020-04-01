@@ -39,6 +39,11 @@ html{
 /*This will be consistent across the site*/
 header {
     background-color:rgba(241, 241, 241, 0.75);
+    background-image: url(../img/finishLine.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    /*background-blend-mode:lighten;*/
+    background-blend-mode:color-dodge;
     height:auto; 
 
 }
@@ -143,7 +148,7 @@ nav ul li a {
     text-align:justify;
     width:auto;
     background-color: rgba(255, 255, 255, 0.15);
-    outline:3px solid orange;
+    outline:3px solid rgb(255, 124, 1);
     
     
 }
@@ -164,7 +169,7 @@ footer {
     font-weight:900;
     font-size:2em;
     text-align:center;
-    color:gray;
+    color:rgb(255, 124, 1);
     letter-spacing: .4em;
 }
 .footerFirstCenter {
@@ -179,11 +184,19 @@ footer {
     font-weight:900;
     font-size:2em;
     text-align:center;
-    color:gray;
+    color:rgb(255, 124, 1);
     letter-spacing: .4em;
     
 }
-
+#footerFirstRight {
+    margin-top:25px;
+    font-weight:900;
+    font-size:2em;
+    text-align:center;
+    color:black;
+    letter-spacing: .4em;
+    
+}
 form {
     width:33.3%;
     background-color:rgb(102, 102, 102);
@@ -198,21 +211,22 @@ input {
     color:white;
     padding:7px;
     border:1px solid black;
-    margin-left:80px;
+    margin-left:5em;
     width:40%;
     
 }
 
 textarea{
+    font-family: 'Roboto Condensed', sans-serif;
     width: 40%;
     height:40%;
     float:right;
-    margin-right:80px;
+    margin-right:5em;
     background-color:rgb(37, 37, 37);
     padding:7px;
     border:1px solid black;
     position: relative;
-    bottom:120px;
+    bottom:7.5em;
     
 }
 
@@ -220,7 +234,7 @@ textarea{
    height:auto;
    width:25%;
    position:relative;
-   left:150px;
+   left:9.375em;
    bottom:10px;
    
  }
@@ -246,20 +260,19 @@ a {
     text-align:center;
 }
 
-.footerStyle{
-    font-family: calibri;
-    color:white;
+#footerStyle {
+    background-color:white;
+    height:18.75em;
     text-align:center;
-    outline: 3px solid pink;
-    width:33.3%;
+    width:33.40%;
     float:right;
 
 }
-.facebook{
-    background-color:gray;
-    outline: 3px solid orange;
-    position: relative;
-    float:right;
+.socialMedia {
+    margin:10px;
+    position:relative;
+    top:1.875em;
+    
 }
 
 
