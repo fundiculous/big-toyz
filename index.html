@@ -81,8 +81,6 @@
         </div>
     </div>
 
-    <!--<img id = 'mainTruck' src='./img/20140504_175322.jpg' alt='Hustler Monster Truck' width="900" />-->
-
         <p id='mainParagraph'>
             At Big Toyz Racing, we do what we love and work through our passion. We strive to push the envelope to create growth, generate creativity and unique platform for premier marketing, design, build and facilitate custom vehicles, professionally consult, and of course have fun while we are doing it. 
 ​         <br>
@@ -92,39 +90,43 @@
         
         <footer>
             <address>
-                <h3 class ="firstLine">VISIT<br></h3>
-                <h3 class= "secondLine">US<br></h3>
-                <h4>20606 N US HWY 93<BR>
-                WHITE HILLS, AZ 86445<BR>
-                We are open 7 days a week!<br><br></h4>
-                <a href="https://www.google.com/maps/place/20606+US-93,+White+Hills,+AZ+86445/@35.7230313,-114.4884163,17z/data=!3m1!4b1!4m5!3m4!1s0x80cebfd7cc8092d7:0x1441c248d36f201e!8m2!3d35.723027!4d-114.4862276" target=blank>Get Directions</a>
-                </address>
-               
-            <form>
-                <label for ="firstName">First Name:</label><br>
+                <h2 class ="footerFirst">VISIT<br></h2>
+                <h2 class= "footerSecond">US<br></h2>
+                    <h3>20606 N US HWY 93<BR>
+                    WHITE HILLS, AZ 86445<BR>
+                     We are open 7 days a week!<br><br></h3>
+                        <a href="https://www.google.com/maps/place/20606+US-93,+White+Hills,+AZ+86445/@35.7230313,-114.4884163,17z/data=!3m1!4b1!4m5!3m4!1s0x80cebfd7cc8092d7:0x1441c248d36f201e!8m2!3d35.723027!4d-114.4862276" target=blank>Click Here For Directions</a>
+            </address>
+            
+                <form action="https://formspree.io/mlelqrzo" method="POST">
+                    <h2 class="footerFirstCenter">CONTACT<br></h2>
+                    <h2 class = "footerSecondCenter">US</h2>
+                    
+                       
+                         <input type="text"
+                        id="firstName" name="firstName" placeholder="First Name" required> <br> 
 
-                <input type="text"
-                id="firstName" name="firstName"required> <br> 
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required> <br>
+
+                        <input type="text" id="emailAddress" name="emailAddress" placeholder="E-mail Address" required> <br>
+                   
+                         <textarea rows="8" cols="35" placeholder= "Type comments here: "></textarea>  <br>
+
+                        <input type="submit" id="submitButton" value="Submit">
+                    
+                </form>
+            <div id= 'footerStyle'>
+                <h2 id ="footerFirstRight">FOLLOW<br></h2>
+                <h2 class = "footerSecond">US<br></h2>
                 
-                <label for="lastName">Last Name:</label><br>
-
-                <input type="text" id="lastName" name="lastName" required> <br>
-
-                <label for="emailAddress">E-mail Address</label><br>
-
-                <input type="text" id="emailAddress" name="emailAddress" required> <br>
-
-                <label for="comments" id="comments">Please provide any<br> additional comments:</label> <br>
-
-                <textarea rows="8" cols="35" placeholder="Type comments here"> </textarea>  <br>
-
-                <input type="submit" id="submitButton" value="Click here">
-            </form>
-            <div class="footerStyle">
-                Follow us on Social Media: <br><br>
-                
-                <a id = 'facebook' href="https://www.facebook.com/bigtoyzracing/" target=blank>
-                    <img id= 'faceBookImage' src="https://icon-library.net/icon/official-facebook-icon-download-14.html" alt= "Facebook"></a>
+                <a class = 'socialMedia' href="https://www.facebook.com/bigtoyzracing/" target=blank>
+                    <img id= 'faceBookImage' src="./img/facebook.png" alt= "Facebook" style="width:4em;height:4em;"></a>
+                <a class = 'socialMedia' href="https://www.instagram.com/bigtoyzracing/" target=blank>
+                    <img id= 'instagramImage' src="./img/instagram.png" alt= "Instagram" style="width:4em;height:4em;"></a>
+                <a class = 'socialMedia'href="https://www.youtube.com/channel/UCwNiOP7lk7md8KDhOCOnerQ/" target=blank>
+                    <img id= 'youtubeImage' src="./img/youtube.png" alt= "YouTube" style="width:4.5em;height:4.5em;"></a>
+                <a class = 'socialMedia'href="https://sincitymonstertruckbuild.wordpress.com/" target=blank>
+                    <img id= 'wordPressImage' src="./img/wordpress.png" alt= "Word Press" style="width:4em;height:4em;"></a>
             </div>
             </form>
         </footer>
