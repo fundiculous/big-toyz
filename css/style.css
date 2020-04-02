@@ -1,7 +1,4 @@
-@font-face {
-    font-family:'Lexend Zetta';
-    src: url(../fonts/Lexend_Zetta/LexendZetta-Regular.ttf);
-}
+
 @font-face {
     font-family:'Michroma';
     src: url(../fonts/Michroma/Michroma-Regular.ttf);
@@ -37,13 +34,10 @@ html{
 
 
 /*This will be consistent across the site*/
-header {
-    background-color:rgba(241, 241, 241, 0.75);
-    background-image: url(../img/finishLine.png);
+header{
+    background-image: url(../img/racingline.png);
     background-repeat:no-repeat;
     background-position:right;
-    /*background-blend-mode:lighten;*/
-    background-blend-mode:color-dodge;
     height:auto; 
 
 }
@@ -57,16 +51,19 @@ header {
     height:2.8em;
     /*animated background for header text*/
     background-image:url(https://media.giphy.com/media/AYO7okX03Jbq/giphy.gif);
-    background-size: 20em;
+    background-size: 12em;
     background-position:center;
     background-clip:text;
     -moz-background-clip:text;
     -webkit-background-clip:text;
-    width:35%;
+    width:25%;
+   
     
 }
-
+/* this is the tagline*/
 #logoSub {
+    color:white;
+    text-shadow:4px 4px 4px #000000;
     font-family: 'Michroma', sans-serif;
     font-size: 1.8em;
     padding-right:10px;
@@ -80,19 +77,31 @@ header {
 body {
     background-image: url(../img/tirebackground.jpg);
     background-color: #333333;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
     
 }
-/*red line above nav*/
 hr {
+    background-color:white;
+    width: 60%;
+    height: 20px;
+    display: block;
+    margin-top:65px;
+       
+}
+/*red line above nav and by footer*/
+.thinRed {
     width: 100%;
     border-color:black;
     border-style:solid;
     height: 2px;
     background-color:red;
-    display: block;
-    margin-top:10px;    
+    margin-top:10px; 
 }
-
+img {
+    outline:2px solid red;
+    border:20px solid black;
+}
 /*beginning of NAV bar styling*/
 nav {
     height:3.2em;
@@ -131,31 +140,69 @@ nav ul li a {
     text-shadow:2px 2px 4px #000000;
 }
 /*end of nav bar styling */
+
+.sponsorshipPage{
+    margin:25px 50px 25px 75px;
+    width: 40%;
+    display:inline-block;
+    line-height:3em;
+    font-size:2.8em;
+
+  
+}
+/*home page carousel*/
 .carousel-item {
     width:1300px;
     height:800px;
     margin:100px 305px;
-    border: 20px solid black;
-    outline:5px groove red;
+   outline:5px groove red;
 }
 
-#mainParagraph {
-    font-family: 'Lexend Zetta', sans-serif;
+p {
+    font-family: 'Michroma', sans-serif;
     color:white;
     font-size:1.5em;
     padding:50px;
-    margin: 100px;
-    text-align:justify;
+    width:100%;
+    margin:100px 0px;
+    text-align:center;
     width:auto;
     background-color: rgba(255, 255, 255, 0.15);
     outline:3px solid rgb(255, 124, 1);
-    
+    box-shadow: 20px 20px 10px #1b1b1b;
     
 }
 
-
+#sponsorshipParagraphTwo {
+    float: right;
+    width: 800px;
+    margin-right:175px;
+    margin-top: 60px;
+    box-shadow: 20px 20px 10px #1b1b1b;
+    border-radius:20px;
+    outline:none;
+    border:3px solid rgb(255, 124, 1);
+}
+ul {
+    list-style:none;
+}
+#sponsorshipInfoLinks{
+    position:relative;
+    left:975px;
+    top:-350px;
+    font-size:2em;
+    text-align:center;
+    margin:25px;
+    width: 33.3%;
+    
+}
+#sponsorshipInfoLinks > h2 {
+   font-size:1.8em;
+}
 footer {
     font-family:'Work Sans', sans-serif;
+   /* position:sticky;*/
+    
 }
 /*Quick contact form for the footer of the page and general submissions*/
 .footerFirst{
@@ -266,6 +313,7 @@ a {
     text-align:center;
     width:33.40%;
     float:right;
+    
 
 }
 .socialMedia {
@@ -274,8 +322,19 @@ a {
     top:1.875em;
     
 }
+.socialMediaIcons {
+    border:none;
+    outline:none;
+}
 
+#truckSign {
+    display:inline-block;
+    margin:25px 0 25px 25px;
+    
+}
 
-
-
-
+#chassis{
+    margin:50px 50px 100px 150px;
+    display:inline;
+   
+}
