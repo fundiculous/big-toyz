@@ -113,14 +113,19 @@ img {
     outline:2px solid red;
     border:20px solid black;
 }
+iframe {
+    margin:100px 350px;
+    outline:50px solid black;
+}
 /*beginning of NAV bar styling*/
 nav {
     height:3.2em;
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 18px;
     overflow:hidden;
     position:relative;
     top:-10px;
+    
     
 }
 nav ul {
@@ -328,6 +333,7 @@ address h3 {
 a {
     color:red;
     text-align:center;
+    
 }
 
 #footerStyle {
@@ -449,3 +455,19 @@ label {
     margin:22px;
 }
 
+#guinness {
+    margin:25px;
+}
+#guinness > img {
+    margin:25px 850px;
+}
+
+.guinnessGrid {
+    width:32%;
+    margin-left:20px;
+    margin-bottom:100px;
+   
+}   
+.guinnessGrid > img {
+    height:400px;
+}
