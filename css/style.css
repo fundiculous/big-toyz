@@ -1,4 +1,4 @@
-
+/*All fonts used in sheet*/
 @font-face {
     font-family:'Michroma';
     src: url(../fonts/Michroma/Michroma-Regular.ttf);
@@ -10,38 +10,141 @@
 @font-face {
     font-family:'WorkSans-Black'; src: url(../fonts/Work_Sans/static/WorkSans-Black.ttf);
 }
+
+ /*Media resizing rules*/  
+ /*these will be modified later as with the current code is is NOT responsive even with my ems. Need to use grids to set placements and formatting*/
+/*
+@media only screen and (max-width: 600px) {
+    body {
+       background-color:purple;   
+    }
+}
+@media only screen and (min-width:600px)
+{
+    body{
+        background-color:yellow;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color:red;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+}
+*/
+
+/*basic elements formatting minus groups like the nav bar*/
 html{
         font-size: 16px;
-    }
-   
-
-@media only screen and (max-width: 800px) {
-    body {
-        font-size: 10px;    
-    }
-}
-/*
-@media only screen and (max-width: 8480px) {
-    body {
-        font-size: 8px;
-    }
-}
-@media only screen and (min-width: 800px) {
-    body {
-        font-size: 16px;
-    }
 }
 
+body {
+    background-image: url(../img/tirebackground.jpg);
+    background-color: #333333;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+}
 
-/*This will be consistent across the site*/
 header{
     background-image: url(../img/racingline.png);
     background-repeat:no-repeat;
     background-position:right;
     height:auto; 
-
 }
-/*This is for the header shown on every page.*/
+
+h1 {
+    text-align:center;
+    font-size:5em;
+    margin:40px 0;
+    background-color: #333333;
+    background-size:100%;
+    text-shadow:20px 20px 10px #1b1b1b;
+}
+
+p {
+    font-family: 'Michroma', sans-serif;
+    color:white;
+    font-size:1.5em;
+    padding:50px;
+    width:100%;
+    margin:100px 0px;
+    text-align:center;
+    width:auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    outline:3px solid rgb(255, 124, 1);
+    box-shadow: 20px 20px 10px #1b1b1b;
+}
+
+img {
+    outline:2px solid red;
+    border:20px solid black;
+}
+
+/*only location used is above nav bar*/
+hr {
+    width: 100%;
+    border-color:black;
+    border-style:solid;
+    height: 2px;
+    background-color:red;
+    margin-top:10px; 
+}
+
+ul {
+    list-style:none;
+}
+
+iframe {
+    margin:100px 350px;
+    outline:50px solid black;
+}
+
+footer {
+    font-family:'Work Sans', sans-serif;
+    width:100%;
+}
+
+a {
+    color:red;
+    text-align:center;   
+}
+
+form {
+    width:33.3%;
+    background-color:rgb(102, 102, 102);
+    height:18.75em;
+    float:left;
+}
+/*input styling for the quick form at the bottom*/
+input {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:rgb(37, 37, 37);
+    color:white;
+    padding:7px;
+    border:1px solid black;
+    margin-left:5em;
+    width:40%;
+}
+/* styling for form input boxes*/
+label {
+    background-color: rgb(37, 37, 37);
+    padding:10px 25px;
+    float:left;
+    outline: 10px solid black;
+    border: 2px solid white;
+    color:grey;
+}
+
+/*These are elements that appear on every page (header and footer specifics)*/
+
+
+/*This is for main brand name-Big Toyz Racing.*/
 #logoName {
     font-family: 'Michroma', sans-serif;
     letter-spacing:20px;
@@ -55,21 +158,13 @@ header{
     background-position:center;
     background-clip:text;
     -moz-background-clip:text;
+    /*not sure why the webkit is giving errors*/
     -webkit-background-clip:text;
     width:25%;
     text-align:left;   
     margin:0;
-    
 }
-h1 {
-    text-align:center;
-    font-size:5em;
-    margin:40px 0;
-    background-color: #333333;
-    background-size:100%;
-    text-shadow:20px 20px 10px #1b1b1b;
-    
-}
+
 /* this is the tagline*/
 #logoSub {
     color:white;
@@ -82,41 +177,8 @@ h1 {
     float:right;
     top:-1.7em;
     text-align:right;
-    
-}
-body {
-    background-image: url(../img/tirebackground.jpg);
-    background-color: #333333;
-    font-family: 'Roboto Condensed', sans-serif;
-    color:white;
-    
 }
 
-hr {
-    background-color:white;
-    width: 60%;
-    height: 20px;
-    display: block;
-    margin-top:65px;
-       
-}
-/*red line above nav and by footer*/
-#thinRed {
-    width: 100%;
-    border-color:black;
-    border-style:solid;
-    height: 2px;
-    background-color:red;
-    margin-top:10px; 
-}
-img {
-    outline:2px solid red;
-    border:20px solid black;
-}
-iframe {
-    margin:100px 350px;
-    outline:50px solid black;
-}
 /*beginning of NAV bar styling*/
 nav {
     height:3.2em;
@@ -125,23 +187,21 @@ nav {
     overflow:hidden;
     position:relative;
     top:-10px;
-    
-    
 }
+
 nav ul {
     width:100%; /*from above*/
     list-style:none;
     margin:0;
     padding:0px;    
-    
 }
+
 nav ul li{
     width:24.4%;
     float:left;
-    padding:0px 5px;
-    
-        
+    padding:0px 5px;       
 }
+
 nav ul li a {
     display:block;
     width: 100%;
@@ -157,16 +217,7 @@ nav ul li a {
 }
 /*end of nav bar styling */
 
-.sponsorshipPage{
-    margin:25px 50px 25px 75px;
-    width: 40%;
-    display:inline-block;
-    line-height:3em;
-    font-size:2.8em;
-
-  
-}
-/*home page carousel*/
+/*index page carousel*/
 #mainCarousel .carousel-item {
     width:1300px;
     height:800px;
@@ -178,24 +229,22 @@ nav ul li a {
     width:850px;
     height:1000px;
     margin:50px 550px 100px 550px;
+}
+/*end of home page carousel*/
 
+/*Sponsorship page elements*/
+/*sponsorship page tagline in body area*/
+
+.sponsorshipPage{
+    margin:25px 50px 25px 75px;
+    width: 40%;
+    display:inline-block;
+    line-height:3em;
+    font-size:2.8em;
+    background-color:transparent;  
 }
 
-
-p {
-    font-family: 'Michroma', sans-serif;
-    color:white;
-    font-size:1.5em;
-    padding:50px;
-    width:100%;
-    margin:100px 0px;
-    text-align:center;
-    width:auto;
-    background-color: rgba(255, 255, 255, 0.15);
-    outline:3px solid rgb(255, 124, 1);
-    box-shadow: 20px 20px 10px #1b1b1b;
-    
-}
+/*second paragraph on sponsorship page*/
 
 #sponsorshipParagraphTwo {
     float: right;
@@ -207,9 +256,9 @@ p {
     outline:none;
     border:3px solid rgb(255, 124, 1);
 }
-ul {
-    list-style:none;
-}
+
+/*Links to additional sponsorship stuff, one coming soon to add later*/
+
 #sponsorshipInfoLinks{
     position:relative;
     left:975px;
@@ -218,17 +267,15 @@ ul {
     text-align:center;
     margin:25px;
     width: 33.3%;
-    
 }
+
 #sponsorshipInfoLinks > h2 {
    font-size:1.8em;
 }
-footer {
-    font-family:'Work Sans', sans-serif;
-   /* position:sticky;*/
-    
-}
-/*Quick contact form for the footer of the page and general submissions*/
+
+/*Footer styling (to change in the future use grid, now that I am familiar)*/
+
+/*the top line of the h2 element on each of the three boxes in the footer*/
 .footerFirst{
     font-weight:900;
     font-size:2em;
@@ -236,6 +283,9 @@ footer {
     color:white;
     letter-spacing: .4em;
 }
+
+/*the second line of the h2 element on each of the three boxes in the footer*/
+
 .footerSecond {
     font-weight:900;
     font-size:2em;
@@ -243,54 +293,34 @@ footer {
     color:rgb(255, 124, 1);
     letter-spacing: .4em;
 }
+
+/*the top line of the center box in the footer*/
+
 .footerFirstCenter {
     margin-top:25px;
     font-weight:900;
-    font-size:2em;
     text-align:center;
-    color:white;
     letter-spacing: .4em;
 }
+
+/* the second line of the center box in the footer*/
+
 .footerSecondCenter {
     font-weight:900;
-    font-size:2em;
     text-align:center;
     color:rgb(255, 124, 1);
     letter-spacing: .4em;
-    
 }
+
+/*first line on the right hand box in the footer*/
+
 #footerFirstRight {
     margin-top:25px;
     font-weight:900;
-    font-size:2em;
-    text-align:center;
     color:black;
-    letter-spacing: .4em;
-    
-}
-form {
-    width:33.3%;
-    background-color:rgb(102, 102, 102);
-    height:18.75em;
-    float:left;
-           
+    letter-spacing: .4em;  
 }
 
-input {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color:rgb(37, 37, 37);
-    color:white;
-    padding:7px;
-    border:1px solid black;
-    margin-left:5em;
-    width:40%;
-    
-}
-#submit {
-    position:relative;
-    right:25px;
-    width:100%;
-}
 #footerTextArea{
     
     width: 40%;
@@ -304,15 +334,18 @@ input {
     bottom:7.5em;
     
 }
+/*submit button for mini contact form in footer*/
 
 #submitButton {
-   height:auto;
-   width:25%;
-   position:relative;
-   left:9.375em;
-   bottom:10px;
-   
- }
+    height:auto;
+    width:25%;
+    position:relative;
+    left:9.375em;
+    bottom:10px;
+}
+
+/*address located in footer*/
+
 address{
     width:33.3%;
     float: left;
@@ -329,12 +362,7 @@ address h3 {
     font-size: 1.2em;
 }
 
-
-a {
-    color:red;
-    text-align:center;
-    
-}
+/*right bottom box in footer with social media links*/
 
 #footerStyle {
     background-color:white;
@@ -342,31 +370,33 @@ a {
     text-align:center;
     width:33.40%;
     float:right;
-    
-
 }
 .socialMedia {
     margin:10px;
     position:relative;
-    top:1.875em;
-    
+    top:1.875em; 
 }
+
 .socialMediaIcons {
     border:none;
     outline:none;
 }
 
+/*image of South Point billboard and monster truck on sponsorship page*/
+
 #truckSign {
     display:inline-block;
     margin:25px 0 25px 25px;
-    
 }
+
+/*image of shocks and chassis on the sponsorship page*/
 
 #chassis{
     margin:50px 50px 100px 150px;
-    display:inline;
-   
+    display:inline; 
 }
+
+/*Form formatting for the sponsorship submission form*/
 
 #leadForm {
     display:inline-block;
@@ -418,33 +448,20 @@ a {
     background-color: rgb(37, 37, 37);
     margin:20px;
 }
-
+ 
 #contactSelection {
     padding:0px;
     margin-left:350px;
     width:25%;
     text-align:center;
-   
-   
-}
-label {
-    background-color: rgb(37, 37, 37);
-    padding:10px 25px;
-    float:left;
-    outline: 10px solid black;
-    border: 2px solid white;
-    color:grey;
-    
-    
 }
 
 #contactSelection > label {
     float:left;  
     width:12em;
     text-align:left;
-    
-
 }
+
 #contactSelection > input {
     position:relative;
     top:-45px;
@@ -455,6 +472,16 @@ label {
     margin:22px;
 }
 
+/*submit button for sponsorship submission form*/
+#submit {
+    position:relative;
+    right:25px;
+    width:100%;
+}
+/*end of sponsorship submission form*/
+
+/*image and link to Guinness World Record link*/
+
 #guinness {
     margin:25px;
 }
@@ -462,12 +489,14 @@ label {
     margin:25px 850px;
 }
 
+/* grid images at the bottom of world record page*/
 .guinnessGrid {
     width:32%;
     margin-left:20px;
     margin-bottom:100px;
    
 }   
+
 .guinnessGrid > img {
     height:400px;
 }
