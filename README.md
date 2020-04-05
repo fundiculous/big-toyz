@@ -1,2 +1,6 @@
 # big-toyz
 Coding Project 1
+Jen Campbell
+Big Toyz Racing Sponsorship app. Providing info to businesses for marketing purposes. A form for submission on more content. 
+Tech used: HTML, CSS, Bootstrap,
+Future improvement : Redo formatting, didn't quite understand practive of grids until the end, which a-would have made it exponentially faster to design and responsive. 2- Make site responsive. Tried using EMs but they didn't change with the screen changes. Tried to test media query in CSS using background, but it didn't change the color as I resized the screen. So definitely make that responsive site. 3. I would like to make a 360 degree animation of the truck or at least hit key angles that the user can click on to see the facts/details and what the marketing options are (sticker location) 4. Upgrade the styling using grids to layout more aesthetically and set the footer. 5. Fade the carousel on the first page. Tried for a couple days but all the code I tried I couldn't work. 6. use some javascript to enhance it. It's very flat currently. 7. Add more pages. 8.Make it more of a web app. I realize this actually is more on the the web site end of things since I didn't get to the full spectrum of what I would like to do with it. 
